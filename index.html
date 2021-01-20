@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GEONITH GEORGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style>
+
+    :root {
+    --main-bg-color: white;
+    --background: black;
+    --wt: white;
+    }
+
+    .CLR {
+      background: #ff9966;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    background: black;
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  p{
+      font-size: 20px;
+      padding: 2px;
+  }
+
+  a{
+    color: wheat;
+
+  }
+
+  a:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    /* line-height: 1.375em; */
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: var(--main-bg-color);
+    padding: 100px 25px;
+    /* font-family: Montserrat, sans-serif; */
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-section {
+    background-color: var(--main-bg-color);;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: var(--main-bg-color);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    /* color: var(--main-bg-color) !important; */
+    background-color: white !important;
+    color: black !important;;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--main-bg-color);
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+
+  /* typewriter */
+  .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent}
+  50% {}
+}
+
+
+    </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">GEONITH GEORGE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">Home</a></li>
+        <li><a href="#music">New Releases</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center"  >
+
+    <div class="jumbotron">
+        <div style="height: 200px;">
+            <p style="color:black;text-align: center;margin-top: 200px;">GEONITH GEORGE</p> 
+        </div>
+          <!-- <h4 style="color:black">quote</h4> -->
+          <div>
+            <a target="_blank" href="https://www.instagram.com/geonith/"><img height="20px" width="20px" src="./instagram.png" alt="" srcset=""></a>
+          </div>
+
+    </div>
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="music" class="container">
+
+    <div class="container" style="margin: 20px;">
+
+        <!-- <h4 style="text-align: center;color: white;">Latest Releases</h4> -->
+        <div class="col-sm-12">
+            <h4 style="text-align: center;color: white;">Latest Releases</h4>
+        </div>
+    </div>
+  
+    <!-- song -->
+    <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--67C0559F-DF6E-4649-B0234653BD88A7B8--1610992116860--File000.png?fm=jpg&q=75&w=800&s=5e9391c5f6838fb41949f04315e723a4">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Waves</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/album/58k9x4V1LoFBO54yfeS4PG"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=gi58zXhEYzY"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/us/album/waves/1549724590?i=1549724591"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08TH3C9SZ?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&trackAsin=B08TG5Q2BR"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+
+     <!-- song -->
+     <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--8582D6D4-1509-4967-B66EEAFA6A0C8D6D--1607798185685--IMG0368.JPG?fm=jpg&q=75&w=800&s=72d564409e66cbae6447d9fe0c74ce28">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Close</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/album/1z1ow0A2ARK95ykJhbLZSG"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=JxZjHLQ1uiE"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/us/album/close-single/1544619326?uo=4&app=itunes&at=1001lry3&ct=dashboard"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08QG67NVX?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&trackAsin=B08QG5HS9M"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+     <!-- song -->
+     <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--CF0654C5-93C5-4B86-96E709B373D0C1DA--1606759563302--IMG0145.PNG?fm=jpg&q=75&w=800&s=f9643b5bacc95b5220ce42625661932e">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Safe</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/album/0tKh2TL3HLjboEjxOiOlqc"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=O4EA9OogTDs"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/us/album/safe-single/1542657252?uo=4&app=itunes&at=1001lry3&ct=dashboard"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08PCBYR49?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&trackAsin=B08PC8KZSF"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+
+     <!-- song -->
+     <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--C271FAE2-AE3E-4EFB-A8850F39E74FC757--1605424721370--missme.PNG?fm=jpg&q=75&w=800&s=2581a29f326e4c9cd6066039339f528c">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Miss Me</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/album/3YVytcMB2Gm36h2Ei5jWgI"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=Y2WvqzY5n6k"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/us/album/miss-me-single/1540472657?uo=4&app=itunes&at=1001lry3&ct=dashboard"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08NPH3878?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&trackAsin=B08NP3HZTX"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+     <!-- song -->
+     <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--A268DA72-C82A-49B0-8CB3E5766BB1FEDC--1604146838622--reality.PNG?fm=jpg&q=75&w=800&s=a73fd02a9f518374ae56cc0d5d0a983b">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Reality</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/artist/2DZ9UpRQCggYJETLvVtR3n?si=Re7Gy-sGQ8uYOcU6n3GiQg"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=YRhEsgzar5c"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/in/artist/geonith-george/1538275855"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08N58THHL?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div> 
+
+    <!--  -->
+    <div class="jumbotron container-fluid">
+
+      <div class="col-sm-12">
+          <h5 style="color: black;text-align: center;" >Artist Page</h5>
+
+          <div style="text-align: center;">
+            <a target="_blank" href="https://open.spotify.com/artist/2DZ9UpRQCggYJETLvVtR3n"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+              
+              <a target="_blank" href="https://www.youtube.com/channel/UC2H0BH3BS3RKJLpR2nS7HqA"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+              
+              <a target="_blank" href="https://music.apple.com/us/artist/geonith-george/1538275855"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+              
+              <a target="_blank" href="https://music.amazon.in/artists/B08N57Z7JQ/geonith-george"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+              
+              <a target="_blank" href="https://www.jiosaavn.com/artist/geonith-george/R6kErXvW4EE_"><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a>
+              
+          </div>
+      </div>
+  </div>
+
+</div>
+</div>
+<br><br>
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <!-- <p>GEONITH GEORGE</p> -->
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

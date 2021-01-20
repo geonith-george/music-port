@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name":"Reality",
+        "image":"",
+        "link":[
+            {
+                "spotify":"",
+                "youtube":"",
+                "itunes":"",
+                "amazon":"",
+                "saavn":""
+            }
+            
+        ]
+
+    },
+    {
+        "id": 2,
+        "name":"Miss Me",
+        "image":"",
+        "link":[
+            {
+                "spotify":"",
+                "youtube":"",
+                "itunes":"",
+                "amazon":"",
+                "saavn":""
+            }
+            
+        ]
+
+    },
+    {
+        "id": 3,
+        "name":"Safe",
+        "image":"",
+        "link":[
+            {
+                "spotify":"",
+                "youtube":"",
+                "itunes":"",
+                "amazon":"",
+                "saavn":""
+            }
+            
+        ]
+
+    },
+    {
+        "id": 4,
+        "name":"Close",
+        "image":"",
+        "link":[
+            {
+                "spotify":"",
+                "youtube":"",
+                "itunes":"",
+                "amazon":"",
+                "saavn":""
+            }
+            
+        ]
+
+    },
+    {
+        "id": 5,
+        "name":"Waves",
+        "image":"",
+        "link":[
+            {
+                "spotify":"",
+                "youtube":"",
+                "itunes":"",
+                "amazon":"",
+                "saavn":""
+            }
+            
+        ]
+
+    }
+]

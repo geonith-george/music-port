@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GEONITH GEORGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style>
+
+    :root {
+    --main-bg-color: white;
+    --background: black;
+    --wt: white;
+    }
+
+    .CLR {
+      background: #ff9966;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    background: black;
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  p{
+      font-size: 20px;
+      padding: 2px;
+  }
+
+  a{
+    color: wheat;
+
+  }
+
+  a:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    /* line-height: 1.375em; */
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: var(--main-bg-color);
+    padding: 100px 25px;
+    /* font-family: Montserrat, sans-serif; */
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-section {
+    background-color: var(--main-bg-color);;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: var(--main-bg-color);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    /* color: var(--main-bg-color) !important; */
+    background-color: white !important;
+    color: black !important;;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--main-bg-color);
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+
+  /* typewriter */
+  .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent}
+  50% {}
+}
+
+
+    </style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/index.html">GEONITH GEORGE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/index.html">New Releases</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (About Section) -->
+
+<div class="container" style="background-color: black; margin-top: 70px;">
+
+</div>
+
+<div id="music" class="container">
+  
+    <!-- song -->
+    <div class="jumbotron container-fluid">
+      <!-- image -->
+        <div class="col-sm-4">
+            <img alt="" srcset="" height="150px" width="150px" src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F2438831--67C0559F-DF6E-4649-B0234653BD88A7B8--1610992116860--File000.png?fm=jpg&q=75&w=800&s=5e9391c5f6838fb41949f04315e723a4">
+        </div>
+        <!-- name -->
+        <div class="col-sm-4">
+            <hr>
+            <h5 style="color: black;" >Waves</h5>
+        </div>
+        <!-- links -->
+        <div class="col-sm-4">
+            <hr>
+            <h5>Listen Now</h5>
+            <div>
+              <a target="_blank" href="https://open.spotify.com/album/58k9x4V1LoFBO54yfeS4PG"><img height="20px" width="auto" src="./spotify.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://www.youtube.com/watch?v=gi58zXhEYzY"><img height="20px" width="auto" src="./youtube.png" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.apple.com/us/album/waves/1549724590?i=1549724591"><img height="20px" width="auto" src="./itunes.jpg" alt="" srcset=""></a>
+                
+                <a target="_blank" href="https://music.amazon.in/albums/B08TH3C9SZ?marketplaceId=A3K6Y4MI8GDYMT&musicTerritory=IN&trackAsin=B08TG5Q2BR"><img height="20px" width="auto" src="./amazon music.png" alt="" srcset=""></a>
+                
+                <!-- <a target="_blank" href=""><img height="20px" width="auto" src="./saavn.png" alt="" srcset=""></a> -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <!-- <span class="glyphicon glyphicon-chevron-up"></span> -->
+  </a>
+  <!-- <p>GEONITH GEORGE</p> -->
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
